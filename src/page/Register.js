@@ -67,14 +67,13 @@ const Register = () => {
         </div>
         <div class="media text-muted pt-3"> <img src={logo} className="App-logo" alt="logo" class="mr-2 rounded" width="32px" height="32px" />
           <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"> <strong class="d-block text-gray-dark">ターミナルに下記のコマンドが表示されれば、ローカルホストで本ページが開ければ完了</strong> <br/> <code>
-                Compiled successfully!
-
-    You can now view create-react-app-lambda in the browser.
-
-      http://localhost:3001
-
-    Note that the development build is not optimized.
-    To create a production build, use yarn build.
+                Compiled successfully!<br/>
+                <br/>
+                You can now view create-react-app-lambda in the browser.<br/>
+                http://localhost:3001<br/>
+                <br/>
+                Note that the development build is not optimized.<br/>
+                To create a production build, use yarn build.
                 </code> </p>
         </div>
       </div>
