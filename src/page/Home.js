@@ -11,10 +11,11 @@ const Home = () => {
       <div className="App">
       <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <p>
-            </p>
+            <div class="home_button">
             <Link to={`/register/`}><Button variant="outline-light">チュートリアル</Button></Link>
-            </header>
+
+            </div>
+          </header>
         </div>
     </>
   );

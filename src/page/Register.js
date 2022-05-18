@@ -19,7 +19,7 @@ const Register = () => {
         </Col>
         </Row>
         <Row>
-        <Col><Link to={`/`}><Button variant="primary">チュートリアル</Button> </Link></Col>
+        <Col><Link to={`/`}><Button variant="primary">ホーム画面に戻る</Button> </Link></Col>
         </Row>
         </Container>
     </div>
