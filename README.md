@@ -2,12 +2,30 @@
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg?utm_source=github&utm_medium=swyx-CRAL&utm_campaign=devex)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/create-react-app-lambda&utm_source=github&utm_medium=swyx-CRAL&utm_campaign=devex)
 
-> ⚠️NOTE: You may not need this project at all. [Netlify Dev](https://github.com/netlify/netlify-dev-plugin) works with `create-react-app` out of the box! Only use `netlify-lambda` if you need a build step for your functions, eg if you want to use Babel or TypeScript ([see its README for details](https://github.com/netlify/netlify-lambda/blob/master/README.md#netlify-lambda)).
+## チュートリアル
 
-## Project Setup
+1. GitHubからこのリポジトリをクローン
+2. クローンしたディレクトリ内で下記のコマンドを実行する
 
-**Source**: The main addition to base Create-React-App is a new folder: `src/lambda`. This folder is specified and can be changed in the `package.json` script: `"build:lambda": "netlify-lambda build src/lambda"`.
+```
+npm install
+```
 
-**Dist**: Each JavaScript file in there will be built for Netlify Function deployment in `/built-lambda`, specified in [`netlify.toml`](https://www.netlify.com/docs/netlify-toml-reference/?utm_source=github&utm_medium=swyx-CRAL&utm_campaign=devex).
+3. コマンド実行で必要な前提プログラムがインストールされるため
+　 再度、本ディレクトリで下記のコマンドを実行する
 
-As an example, we've included a small `src/lambda/hello.js` function, which will be deployed to `/.netlify/functions/hello`. We've also included an async lambda example using async/await syntax in `async-dadjoke.js`.
+```
+npm start
+```
+
+4. ターミナルに下記のコマンドが表示されれば、成功
+```
+Compiled successfully!
+
+You can now view create-react-app-lambda in the browser.
+
+  http://localhost:3001
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+```
