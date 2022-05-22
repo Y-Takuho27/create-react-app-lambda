@@ -9,6 +9,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 const Register = () => {
   return (
     <>
+    	<base href="/register/" ></base>
       <div class="jumbotron">
       <Container>
         <Row>
@@ -19,6 +20,7 @@ const Register = () => {
         </Col>
         </Row>
         <Row>
+        <Col><Link to={`/`}><Button variant="primary">Q&Aページ</Button> </Link></Col>
         <Col><Link to={`/`}><Button variant="primary">ホーム画面に戻る</Button> </Link></Col>
         </Row>
         </Container>
@@ -52,8 +54,12 @@ const Register = () => {
       <div class="my-3 p-3 bg-white rounded box-shadow">
         <h5 class="border-bottom border-gray pb-2 mb-0">環境作成</h5>
         <div class="media text-muted pt-3"> <img src={logo} className="App-logo" alt="logo" class="mr-2 rounded" width="32px" height="32px" />
-          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"> <strong class="d-block text-gray-dark">下記、GitHubのソースコードをクローンする</strong> <br/> <a href="https://github.com/Y-Takuho27/create-react-app-lambda">
-                <img alt="Github" src="https://gh-card.dev/repos/Y-Takuho27/create-react-app-lambda.svg"/></a> </p>
+          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+          <strong class="d-block text-gray-dark">下記、GitHubのソースコードをクローンする</strong>
+              <a href="https://github.com/Y-Takuho27/create-react-app-lambda">
+              <img class="img-fluid"  alt="Github" src="https://gh-card.dev/repos/Y-Takuho27/create-react-app-lambda.svg"/>
+              </a>
+            </p>
         </div>
         <div class="media text-muted pt-3"> <img src={logo} className="App-logo" alt="logo" class="mr-2 rounded" width="32px" height="32px" />
           <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"> <strong class="d-block text-gray-dark">クローンしたディレクトリ内で下記のコマンドを実行する</strong> <br/> <code>
