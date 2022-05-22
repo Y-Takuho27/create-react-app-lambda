@@ -9,7 +9,6 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 const Register = () => {
   return (
     <>
-    	<base href="/register/" ></base>
       <div class="jumbotron">
       <Container>
         <Row>

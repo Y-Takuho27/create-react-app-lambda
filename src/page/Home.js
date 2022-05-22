@@ -8,7 +8,6 @@ import { Button } from 'react-bootstrap';
 const Home = () => {
   return (
     <>
-    	<base href="/" ></base>
       <div className="App">
       <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
