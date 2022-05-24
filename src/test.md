@@ -1,3 +1,4 @@
+```
 /* App.js */
 import React from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
@@ -24,3 +25,4 @@ const App = () => {
 };
 
 export default App;
+```

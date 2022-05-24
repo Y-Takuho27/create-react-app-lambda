@@ -1,7 +1,7 @@
 /*  Home.js */
 import React from "react"
 import "../App.css"
-import { Container, Row, Col, Button, Accordion } from 'react-bootstrap';
+import { Container, Row, Col, Button, Accordion, Dropdown, DropdownButton } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -17,6 +17,18 @@ const Home = () => {
           </Row>
           <Row>
             <Col><Link to={`/top/`}><Button variant="primary">ホーム画面に戻る</Button> </Link></Col>
+            <Col>
+              <DropdownButton
+                variant="primary"
+                title="チュートリアル一覧へ"
+                id="input-group-dropdown-1"
+              >
+                <Dropdown.Item href="/#/tutorial/tp1/">1. 環境作成</Dropdown.Item>
+                <Dropdown.Item href="/#/tutorial/tp2/">2. App.jsの仕組みについて</Dropdown.Item>
+                <Dropdown.Divider />
+                <Dropdown.Item href="#">作成中</Dropdown.Item>
+              </DropdownButton>
+            </Col>
           </Row>
         </Container>
       </div>
@@ -77,6 +89,34 @@ const Home = () => {
                 │   └── <font class="text-success">serviceWorker.js // Service Worker の制御ファイル</font><br />
                 └── <font class="text-success">yarn.lock // npm環境をyarnで実行する場合の .lockファイル</font><br />
               </code>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header><i class="fas fa-solid fa-chess-pawn text-primary pe-2"></i>React と ReactNativeの違いとは？</Accordion.Header>
+            <Accordion.Body>
+              <div class="my-3 p-3 bg-white rounded box-shadow">
+                <div class="row mb-2">
+                  <div class="col-md-6">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                      <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">React</strong>
+                        <p class="card-text mb-auto">Reactは高速でスケーラブル、かつシンプルなWebアプリケーションの開発・構築プロセスを簡素化する事を目的に作られた言語です。<br />
+                          そのため、主にWEBアプリケーションを作成したいという目標のある方に向いてるプログラムになります。</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                      <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-success">React Native</strong>
+                        <p class="card-text mb-auto">ReactNativeは クロス プラットフォーム（Windows、Android、iOS）で共通化する事を目的に作られた言語です<br />
+                          そのため、主にサービスをクロスプラットフォームに提供したいという目的で利用可能な言語です。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
