@@ -82,7 +82,7 @@ const Register = () => {
                 <h6 class="border-bottom border-gray pb-2 mb-0">import ○○ from "■■" とは？</h6><br />
                 <p>このような記載は ○○ という名前の処理を ■■ というライブラリを読み込んでください。という指示のために利用されます。<br />
                     一例を記載すると「import {'HashRouter, Routes, Route'} from "react-router-dom";」の場合は 「react-router-dom」というライブラリから
-                    「HashRouter, Routes, Route」という機能を読み込んでくださいというような事です。
+                    「HashRouter, Routes, Route」という処理を実行するために記載をしているものです
                 </p>
                 <h6 class="border-bottom border-gray pb-2 mb-0">Routerとは？</h6><br />
                 <p>ファイルを見ると所々で「Router」という言葉が表示されていると思います。<br />
@@ -90,7 +90,7 @@ const Register = () => {
                     <br />
                     例をあげると「/top/」という階層をユーザーが踏んだ際に<br />
                     「import TOP from "./page/Top";」から読み込んだファイルを表示してください<br />
-                    というような処理をこのページで実行するために表示をしているものです。<br />
+                    というような処理を実行するために記載をしているものです。<br />
                 </p>
             </Container>
         </>
